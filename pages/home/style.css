@@ -15,7 +15,7 @@ button {
   cursor: pointer;
 }
 
-/* geral */
+/* general */
 
 :root {
   --MAIN_DARK: #33323d;
@@ -28,4 +28,14 @@ button {
 
   --MAIN_FONT: "Public Sans", Arial, Helvetica, sans_serif;
   --SECOND_FONT: "Ibarra Real Nova", Times, "Times New Roman", serif;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  background-color: var(--SECOND_GRAY);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
