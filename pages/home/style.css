@@ -37,13 +37,13 @@ button {
 /* css local */
 
 body {
-  margin: 2vw 10vw;
   background-color: var(--MAIN_BACKGROUND);
   color: var(--MAIN_DARK);
   font-family: var(--MAIN_FONT);
 }
 
 main {
+  margin: 2vw 10vw 0;
   background-color: var(--MAIN_BACKGROUND);
 }
 
@@ -219,3 +219,39 @@ header a:hover {
 }
 
 /* Footer */
+
+footer {
+  padding: 1vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--MAIN_DARK);
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-footer li {
+  color: var(--MAIN_BACKGROUND);
+  padding-left: 1.1rem;
+  display: inline-block;
+  font-variant: small-caps;
+  font-size: 1.2vw;
+}
+
+.logos-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos-footer a {
+  padding-left: 15px;
+}
+
+.logos-footer a:first-child {
+  padding-left: 0;
+}
