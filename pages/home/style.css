@@ -1,0 +1,177 @@
+/* @import url("../../css/global.css"); */
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* general */
+
+:root {
+  --MAIN_DARK: #33323d;
+
+  --MAIN_BLUE: #203a4c;
+  --SECOND_BLUE: #1d3445;
+  --MAIN_GREEN: #5fb4a2;
+
+  --MAIN_GRAY: #eaeaeb;
+  --MAIN_BACKGROUND: #fafafa;
+  --MAIN_WHITE: #eaeaeb;
+
+  --MAIN_FONT: "Public Sans", Arial, Helvetica, sans_serif;
+  --SECOND_FONT: "Ibarra Real Nova", Times, "Times New Roman", serif;
+}
+
+/* css local */
+
+body {
+  margin: 2vw 7vw;
+  background-color: var(--MAIN_BACKGROUND);
+}
+
+main {
+  background-color: var(--MAIN_BACKGROUND);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  padding-left: 1.1rem;
+  display: inline-block;
+  font-family: var(--MAIN_FONT);
+  font-variant: small-caps;
+  font-size: 1.2vw;
+}
+
+ul li:first-child {
+  padding-left: 0;
+  color: var(--MAIN_GREEN);
+}
+
+li a:hover {
+  color: var(--MAIN_GREEN);
+}
+
+/* Hero Section */
+
+.hero-section {
+  width: 100%;
+  margin-bottom: 50px;
+  background-color: var(--MAIN_BACKGROUND);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.hero-section img {
+  /* pc image */
+  width: 100%;
+  display: block;
+}
+
+.presentation-container {
+  position: absolute;
+  width: 39%;
+  height: 59%;
+  background-color: var(--MAIN_BACKGROUND);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container h1 {
+  width: 80%;
+  height: 80%;
+  font-family: var(--SECOND_FONT);
+  color: var(--MAIN_DARK);
+  font-weight: bold;
+  font-size: 3.5vw;
+}
+
+.button-over-me {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--MAIN_WHITE);
+  background-color: var(--MAIN_BLUE);
+  font-family: var(--MAIN_FONT);
+  font-variant: small-caps;
+  display: flex;
+  align-items: center;
+}
+
+.button-over-me span {
+  white-space: nowrap;
+  margin: 0 1vw;
+  font-size: 1.5vw;
+}
+
+.container-button-img {
+  background-color: var(--SECOND_BLUE);
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button-img img {
+  width: 1.4vw;
+}
+
+/* Sobre Section */
+
+.sobre-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-section img {
+  width: 40%;
+  display: block;
+}
+
+.container-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.container-about-me h2 {
+  align-self: flex-start;
+  font-family: var(--SECOND_FONT);
+  color: var(--MAIN_DARK);
+  font-size: 3.5vw;
+}
+
+.container-about-me p {
+  font-family: var(--MAIN_FONT);
+}
