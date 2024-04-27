@@ -25,6 +25,7 @@ button {
   --MAIN_BLUE: #203a4c;
   --SECOND_BLUE: #1d3445;
   --MAIN_GREEN: #5fb4a2;
+  --SECOND_GREEN: #56a292;
 
   --MAIN_GRAY: #eaeaeb;
   --SECOND_GRAY: #dddcde;
@@ -123,6 +124,15 @@ header a:hover {
   align-items: center;
 }
 
+.button-over-me:hover {
+  color: var(--MAIN_GRAY);
+  background-color: var(--MAIN_GREEN);
+}
+
+.button-over-me:hover .container-button-img {
+  background-color: var(--SECOND_GREEN);
+}
+
 .button-over-me span {
   white-space: nowrap;
   margin: 0 1vw;
@@ -141,6 +151,10 @@ header a:hover {
 
 .container-button-img img {
   width: 1.4vw;
+}
+
+.button-over-me:hover .container-button-img img {
+  content: url("../../assets/icons/down-arrows-white.svg");
 }
 
 /* Sobre Section - sem responsividade - tentei e não consegui */
@@ -186,11 +200,16 @@ header a:hover {
 }
 
 .container-about-me button {
-  color: inherit;
   background-color: var(--MAIN_BACKGROUND);
   font-variant: small-caps;
   letter-spacing: 0.0625rem;
   padding: 1rem 1.4rem;
+  border: 2px solid var(--MAIN_DARK);
+}
+
+.container-about-me button:hover {
+  color: var(--MAIN_BACKGROUND);
+  background-color: var(--MAIN_DARK);
 }
 
 /* Contact Section */
@@ -218,6 +237,11 @@ header a:hover {
   border: 2px solid var(--MAIN_DARK);
 }
 
+.contact-section button:hover {
+  background-color: var(--MAIN_DARK);
+  color: var(--MAIN_GRAY);
+}
+
 /* Footer */
 
 footer {
@@ -242,6 +266,10 @@ footer {
   font-size: 1.2vw;
 }
 
+.menu-footer li:hover {
+  color: var(--SECOND_GRAY);
+}
+
 .logos-footer {
   display: flex;
   justify-content: space-between;
@@ -254,4 +282,8 @@ footer {
 
 .logos-footer a:first-child {
   padding-left: 0;
+}
+
+.logos-footer a:hover {
+  opacity: 0.8;
 }
