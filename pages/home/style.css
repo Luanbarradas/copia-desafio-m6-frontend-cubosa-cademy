@@ -56,24 +56,24 @@ header {
   margin-bottom: 5%;
 }
 
-ul {
+header ul {
   display: flex;
   justify-content: space-around;
 }
 
-li {
+header li {
   padding-left: 1.1rem;
   display: inline-block;
   font-variant: small-caps;
   font-size: 1.2vw;
 }
 
-ul li:first-child {
+header li:first-child {
   padding-left: 0;
   color: var(--MAIN_GREEN);
 }
 
-li a:hover {
+header a:hover {
   color: var(--MAIN_GREEN);
 }
 
@@ -194,3 +194,28 @@ li a:hover {
 }
 
 /* Contact Section */
+
+.contact-section {
+  color: inherit;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-section h2 {
+  font-family: var(--SECOND_FONT);
+  font-weight: bold;
+  font-size: 3.2vw;
+  max-width: 50%;
+}
+
+.contact-section button {
+  background-color: inherit;
+  font-variant: small-caps;
+  letter-spacing: 0.0625rem;
+  padding: 1rem 3rem;
+  border: 2px solid var(--MAIN_DARK);
+}
+
+/* Footer */
