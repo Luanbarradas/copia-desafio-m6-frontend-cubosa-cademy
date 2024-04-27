@@ -1,4 +1,5 @@
-/* reset css */
+/* Reset CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +16,18 @@ button {
   cursor: pointer;
 }
 
-/* general */
+/* General */
 
 :root {
   --MAIN_DARK: #33323d;
 
   --MAIN_BLUE: #203a4c;
+  --SECOND_BLUE: #1d3445;
   --MAIN_GREEN: #5fb4a2;
+  --SECOND_GREEN: #56a292;
 
   --MAIN_GRAY: #eaeaeb;
+  --SECOND_GRAY: #dddcde;
   --MAIN_BACKGROUND: #fafafa;
 
   --MAIN_FONT: "Public Sans", Arial, Helvetica, sans_serif;
