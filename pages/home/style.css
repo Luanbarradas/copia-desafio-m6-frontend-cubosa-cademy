@@ -27,8 +27,8 @@ button {
   --MAIN_GREEN: #5fb4a2;
 
   --MAIN_GRAY: #eaeaeb;
+  --SECOND_GRAY: #dddcde;
   --MAIN_BACKGROUND: #fafafa;
-  --MAIN_WHITE: #eaeaeb;
 
   --MAIN_FONT: "Public Sans", Arial, Helvetica, sans_serif;
   --SECOND_FONT: "Ibarra Real Nova", Times, "Times New Roman", serif;
@@ -37,8 +37,10 @@ button {
 /* css local */
 
 body {
-  margin: 2vw 7vw;
+  margin: 2vw 10vw;
   background-color: var(--MAIN_BACKGROUND);
+  color: var(--MAIN_DARK);
+  font-family: var(--MAIN_FONT);
 }
 
 main {
@@ -62,7 +64,6 @@ ul {
 li {
   padding-left: 1.1rem;
   display: inline-block;
-  font-family: var(--MAIN_FONT);
   font-variant: small-caps;
   font-size: 1.2vw;
 }
@@ -80,7 +81,7 @@ li a:hover {
 
 .hero-section {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-color: var(--MAIN_BACKGROUND);
   display: flex;
   align-items: flex-end;
@@ -107,18 +108,16 @@ li a:hover {
   width: 80%;
   height: 80%;
   font-family: var(--SECOND_FONT);
-  color: var(--MAIN_DARK);
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 3.2vw;
 }
 
 .button-over-me {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: var(--MAIN_WHITE);
+  color: var(--MAIN_GRAY);
   background-color: var(--MAIN_BLUE);
-  font-family: var(--MAIN_FONT);
   font-variant: small-caps;
   display: flex;
   align-items: center;
@@ -128,6 +127,7 @@ li a:hover {
   white-space: nowrap;
   margin: 0 1vw;
   font-size: 1.5vw;
+  letter-spacing: 1px;
 }
 
 .container-button-img {
@@ -143,7 +143,7 @@ li a:hover {
   width: 1.4vw;
 }
 
-/* Sobre Section */
+/* Sobre Section - sem responsividade - tentei e não consegui */
 
 .sobre-section {
   display: flex;
@@ -151,27 +151,46 @@ li a:hover {
 }
 
 .sobre-section img {
-  width: 40%;
-  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
+  object-fit: contain;
 }
 
 .container-about-me {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 40%;
-  height: auto;
-  background-color: #f0f0f0;
+  width: 100%;
+  max-width: 35vw;
+  border-bottom: 0.0625rem solid var(--SECOND_GRAY);
+  border-top: 0.0625rem solid var(--SECOND_GRAY);
 }
 
 .container-about-me h2 {
-  align-self: flex-start;
+  color: inherit;
   font-family: var(--SECOND_FONT);
-  color: var(--MAIN_DARK);
-  font-size: 3.5vw;
+  font-size: 2.5vw;
+  margin-bottom: 2.5vw;
 }
 
 .container-about-me p {
-  font-family: var(--MAIN_FONT);
+  color: inherit;
+  line-height: 1.9;
+  margin-bottom: 3rem;
 }
+
+.container-about-me a {
+  align-self: center;
+}
+
+.container-about-me button {
+  color: inherit;
+  background-color: var(--MAIN_BACKGROUND);
+  font-variant: small-caps;
+  letter-spacing: 0.0625rem;
+  padding: 1rem 1.4rem;
+}
+
+/* Contact Section */
