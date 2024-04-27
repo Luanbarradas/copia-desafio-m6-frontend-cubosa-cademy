@@ -1,0 +1,212 @@
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* General */
+
+:root {
+  --MAIN_DARK: #33323d;
+
+  --MAIN_BLUE: #203a4c;
+  --SECOND_BLUE: #1d3445;
+  --MAIN_GREEN: #5fb4a2;
+  --SECOND_GREEN: #56a292;
+
+  --MAIN_GRAY: #eaeaeb;
+  --SECOND_GRAY: #dddcde;
+  --MAIN_BACKGROUND: #fafafa;
+
+  --MAIN_FONT: "Public Sans", Arial, Helvetica, sans_serif;
+  --SECOND_FONT: "Ibarra Real Nova", Times, "Times New Roman", serif;
+}
+
+/* Page base */
+
+body {
+  background-color: var(--MAIN_BACKGROUND);
+  color: var(--MAIN_DARK);
+  font-family: var(--MAIN_FONT);
+}
+
+main {
+  margin: 2vw 10vw 0;
+  background-color: var(--MAIN_BACKGROUND);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header li {
+  padding-left: 1.1rem;
+  display: inline-block;
+  font-variant: small-caps;
+  font-size: 1.2vw;
+}
+
+header li:first-child {
+  padding-left: 0;
+}
+
+.page-in-focus {
+  color: var(--MAIN_GREEN);
+}
+
+header a:hover {
+  color: var(--MAIN_GREEN);
+}
+
+/* Manage, Bookmark, Insure and Fylo Sections */
+
+.project-section {
+  margin: 5vw 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-section img {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: contain;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 30vw;
+  border-bottom: 0.0625rem solid var(--SECOND_GRAY);
+  border-top: 0.0625rem solid var(--SECOND_GRAY);
+}
+
+.container-text h2 {
+  color: inherit;
+  font-family: var(--SECOND_FONT);
+  font-size: 2.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.container-text p {
+  color: inherit;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+.container-text a {
+  align-self: center;
+}
+
+.container-text button {
+  background-color: var(--MAIN_BACKGROUND);
+  font-variant: small-caps;
+  letter-spacing: 0.0625rem;
+  padding: 1rem 1.4rem;
+  border: 2px solid var(--MAIN_DARK);
+}
+
+.container-text button:hover {
+  color: var(--MAIN_BACKGROUND);
+  background-color: var(--MAIN_DARK);
+}
+
+/* Contact Section */
+
+.contact-section {
+  color: inherit;
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-section h2 {
+  font-family: var(--SECOND_FONT);
+  font-weight: bold;
+  font-size: 3.2vw;
+  max-width: 50%;
+}
+
+.contact-section button {
+  background-color: inherit;
+  font-variant: small-caps;
+  letter-spacing: 0.0625rem;
+  padding: 1rem 3rem;
+  border: 2px solid var(--MAIN_DARK);
+}
+
+.contact-section button:hover {
+  background-color: var(--MAIN_DARK);
+  color: var(--MAIN_GRAY);
+}
+
+/* Footer */
+
+footer {
+  padding: 1vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--MAIN_DARK);
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-footer li {
+  color: var(--MAIN_BACKGROUND);
+  padding-left: 1.1rem;
+  display: inline-block;
+  font-variant: small-caps;
+  font-size: 1.2vw;
+}
+
+.menu-footer li:hover {
+  color: var(--SECOND_GRAY);
+}
+
+.logos-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos-footer a {
+  padding-left: 15px;
+}
+
+.logos-footer a:first-child {
+  padding-left: 0;
+}
+
+.logos-footer a:hover {
+  opacity: 0.8;
+}
