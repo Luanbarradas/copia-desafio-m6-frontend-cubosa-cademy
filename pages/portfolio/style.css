@@ -88,10 +88,7 @@ header a:hover {
 }
 
 .project-section img {
-  max-width: 100%;
   max-height: 80vh;
-  height: auto;
-  object-fit: contain;
 }
 
 .container-text {
@@ -99,7 +96,6 @@ header a:hover {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
   max-width: 30vw;
   border-bottom: 0.0625rem solid var(--SECOND_GRAY);
   border-top: 0.0625rem solid var(--SECOND_GRAY);
