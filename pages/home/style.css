@@ -9,13 +9,18 @@ body {
 }
 
 main {
-  margin: 2vw 10vw 0;
+  margin: 0 10vw;
   background-color: var(--MAIN_BACKGROUND);
+}
+
+button {
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Header */
 
 header {
+  margin: 2vw 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +51,7 @@ header a:hover {
 /* Hero Section */
 
 .hero-section {
-  margin-bottom: 100px;
+  margin: 5vw 10vw;
   background-color: var(--MAIN_BACKGROUND);
   display: flex;
   align-items: flex-end;
@@ -90,10 +95,12 @@ header a:hover {
 .button-over-me:hover {
   color: var(--MAIN_GRAY);
   background-color: var(--MAIN_GREEN);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button-over-me:hover .container-button-img {
   background-color: var(--SECOND_GREEN);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button-over-me span {
@@ -117,6 +124,7 @@ header a:hover {
 
 .button-over-me:hover .container-button-img img {
   content: url("../../assets/icons/down-arrows-white.svg");
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Sobre Section - sem responsividade - tentei e não consegui */
@@ -174,8 +182,8 @@ header a:hover {
 /* Contact Section */
 
 .contact-section {
+  margin: 5vw 10vw;
   color: inherit;
-  margin: 100px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

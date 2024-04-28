@@ -11,13 +11,18 @@ body {
 }
 
 main {
-  margin: 2vw 10vw 0;
+  margin: 0 10vw;
   background-color: var(--MAIN_BACKGROUND);
+}
+
+button {
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Header */
 
 header {
+  margin: 2vw 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,8 +107,8 @@ header a:hover {
 /* Contact Section */
 
 .contact-section {
+  margin: 5vw 10vw;
   color: inherit;
-  margin: 100px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
