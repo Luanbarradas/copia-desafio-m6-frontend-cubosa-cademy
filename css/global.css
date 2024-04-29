@@ -5,6 +5,7 @@ body {
 }
 
 main {
+  color: inherit;
   margin: 0 10vw;
   background-color: var(--MAIN_BACKGROUND);
 }
@@ -57,10 +58,20 @@ header a:hover {
   color: var(--MAIN_GREEN);
 }
 
-/* Hero Section */
+header a:active {
+  color: var(--DARK_GREEN);
+}
 
+/* Hero Section */
 .hero-section img {
   width: 100%;
+}
+
+/* Hero Section Portfolio */
+
+.hero-section-portfolio img {
+  max-width: 78.7vw;
+  margin: 2vw 10vw;
 }
 
 /* Sobre, Manage, Bookmark, Insure and Fylo Sections */
@@ -83,23 +94,90 @@ header a:hover {
   max-width: 30vw;
   border-bottom: 0.0625rem solid var(--SECOND_GRAY);
   border-top: 0.0625rem solid var(--SECOND_GRAY);
+  line-height: 2;
 }
 
 .container-text h2 {
   color: inherit;
   font-family: var(--SECOND_FONT);
   font-size: 2.5vw;
-  margin-bottom: 2.5vw;
+  font-weight: bold;
 }
 
 .container-text p {
   color: inherit;
   line-height: 1.9;
-  margin-bottom: 3rem;
 }
 
 .container-text a {
+  margin-top: 2vw;
   align-self: center;
+}
+
+/* containers main - portfolios */
+
+/* main container */
+
+.main-container {
+  margin: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Description Aside Project */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 23vw;
+  border-bottom: 0.0625rem solid var(--SECOND_GRAY);
+  border-top: 0.0625rem solid var(--SECOND_GRAY);
+}
+
+aside h1 {
+  margin: 2vw 0;
+  font-family: var(--SECOND_FONT);
+  font-size: 2vw;
+}
+
+aside p {
+  line-height: 1.9;
+  margin-bottom: 2vw;
+}
+
+.green-letters {
+  font-weight: bold;
+  color: var(--MAIN_GREEN);
+}
+
+aside button {
+  margin-bottom: 2.5vw;
+}
+
+/* Main Section */
+
+.main-datails {
+  margin: 0;
+  max-width: 55%;
+}
+
+.main-datails h2 {
+  margin: 1vw 0;
+  font-family: var(--SECOND_FONT);
+  font-size: 1.7vw;
+  font-weight: lighter;
+}
+
+.main-datails p {
+  line-height: 1.9;
+}
+
+.main-datails img {
+  margin: 1vw 0;
+  max-width: 100%;
 }
 
 /* Links Section */
