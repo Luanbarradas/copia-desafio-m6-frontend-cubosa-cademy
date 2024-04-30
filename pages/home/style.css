@@ -5,15 +5,19 @@
 /* Hero Section */
 
 .hero-section {
+  position: relative;
   margin: 5vw 10vw;
   background-color: var(--MAIN_BACKGROUND);
-  display: flex;
-  align-items: flex-end;
-  position: relative;
+}
+
+.presentation-container,
+.button-over-me {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .presentation-container {
-  position: absolute;
   width: 39%;
   height: 59%;
   background-color: var(--MAIN_BACKGROUND);
@@ -31,9 +35,6 @@
 }
 
 .button-over-me {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   color: var(--MAIN_GRAY);
   background-color: var(--MAIN_BLUE);
   font-variant: small-caps;
