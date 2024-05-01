@@ -63,9 +63,10 @@
   width: 48%;
 }
 
-.title-form h2 {
+.title-form legend {
   font-family: var(--SECOND_FONT);
   font-size: 2.5vw;
+  font-weight: bold;
 }
 
 .form {
