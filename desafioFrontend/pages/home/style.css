@@ -1,0 +1,78 @@
+@import url("../../css/variables.css");
+@import url("../../css/reset.css");
+@import url("../../css/global.css");
+
+/* Hero Section */
+
+.hero-section {
+  position: relative;
+  margin: 5vw 10vw;
+  background-color: var(--MAIN_BACKGROUND);
+}
+
+.presentation-container,
+.button-over-me {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.presentation-container {
+  width: 39%;
+  height: 59%;
+  background-color: var(--MAIN_BACKGROUND);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container h1 {
+  width: 80%;
+  height: 80%;
+  font-family: var(--SECOND_FONT);
+  font-weight: bold;
+  font-size: 3.2vw;
+}
+
+.button-over-me {
+  color: var(--MAIN_GRAY);
+  background-color: var(--MAIN_BLUE);
+  font-variant: small-caps;
+  display: flex;
+  align-items: center;
+}
+
+.button-over-me:hover {
+  color: var(--MAIN_GRAY);
+  background-color: var(--MAIN_GREEN);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-over-me:hover .container-button-img {
+  background-color: var(--SECOND_GREEN);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-over-me span {
+  margin: 0 1vw;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+}
+
+.container-button-img {
+  background-color: var(--SECOND_BLUE);
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button-img img {
+  width: 1.4vw;
+}
+
+.button-over-me:hover .container-button-img img {
+  content: url("../../assets/icons/down-arrows-white.svg");
+  transition: background-color 0.3s, color 0.3s;
+}
